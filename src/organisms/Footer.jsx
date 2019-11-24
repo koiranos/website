@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Text from '../atoms/Typography';
 
 const Root = styled.footer`
-  padding: 4rem;
+  padding: 5rem 2rem;
   background: var(--color-brand-1);
   color: #fff;
 `;
