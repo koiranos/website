@@ -18,6 +18,7 @@ const Stylist = styled.div`
     border: solid medium var(--color-brand-2);
     &:hover{
       img{
+        // 270x350
         filter: none;
       }
     }
