@@ -5,7 +5,7 @@ import GlobalStyle from '../utils/GlobalStyle';
 import Footer from '../organisms/Footer';
 
 const Layout = ({ children, title }) => {
-  const { document = {} } = window || {};
+  const { document = {} } = typeof window !== 'undefined' ? window : {};
   useEffect(() => {}, [document.readyState]);
   return (
     <>
