@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from '../atoms/Typography';
+import Container from '../utils/Container';
 
 const Root = styled.footer`
   padding: 5rem 2rem;
@@ -10,7 +11,10 @@ const Root = styled.footer`
 
 const Footer = () => (
   <Root>
-    <Text align="center">Copyright © {new Date().getFullYear()} StyleQ</Text>
+    <Container>
+      <Text as="h2" subheading>SIGN UP AS A STYLIST</Text>
+      <Text align="center">Copyright © {new Date().getFullYear()} StyleQ</Text>
+    </Container>
   </Root>
 );
 

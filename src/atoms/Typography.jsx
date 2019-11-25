@@ -53,13 +53,19 @@ const Text = styled.p`
     font-size: ${size};
   `}
   ${({ intro }) => intro && css`
+    margin: 2rem 1rem;
     font-size: 5rem;
     font-weight: 300;
     text-align: right;
     line-height: 1.2;
     @media(min-width: 520px) {
-      font-size: 9rem;
+      font-size: 10rem;
     }
+  `}
+  ${({ subheading }) => subheading && css`
+    font-size: 10rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, .2);
   `}
 `;
 

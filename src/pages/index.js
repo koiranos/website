@@ -1,17 +1,12 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import Layout from '../templates/Layout';
 import Header from '../organisms/Header';
-import BGImage from '../assets/bg-lady.jpg';
+import BGImage from '../assets/bg-lady.webp';
 import Text from '../atoms/Typography';
-
-const TextMotion = keyframes`
-  to{
-    background-position: 200% center;
-  }
-`;
+import Container from '../utils/Container';
+import Stylist from '../molecules/Stylist';
 
 const Section1 = styled.section`
   --fade-bg: 255, 255, 255;
@@ -42,7 +37,6 @@ const Section1 = styled.section`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: ${TextMotion} 1s linear infinite;
     span{
       position: relative;
       bottom: .5rem;
@@ -51,16 +45,60 @@ const Section1 = styled.section`
   }
 `;
 
+const Section3 = styled.section``;
+
+const Section4 = styled.section`
+  padding: 6rem 0;
+ > div{
+    @media (min-width: 520px) {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-gap: calc((1100px - 900px) / 2);
+    }
+ }
+`;
+
 const IndexPage = () => (
   <Layout title="Home">
     <Header />
     <Section1>
       <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
-      <Text as="h5"><Text as="span">‹‹‹</Text> Are you a stylists? Sign up with us now</Text>
+      <Text as="h5">
+        <Text as="span">‹‹‹</Text>
+        <a href="#footer">Are you a stylists? Sign up with us now</a>
+        </Text>
     </Section1>
-    <p>Welcome to your new site.</p>
-    <p>Now go do something great.</p>
-    <Link to="/booking/">Go to page 2</Link>
+    <Container>
+      <Section3>
+        <Text as="h2" subheading>REVIEWS</Text>
+      </Section3>
+      <Section4>
+        <Text as="h2" align="right" subheading>OUR STYLISTS</Text>
+        <div>
+          <Stylist>
+            <figure>
+              <img src="https://picsum.photos/200" alt="Rando buddo" />
+            </figure>
+            <Text as="h5">Wes</Text>
+            <Text as="h6">Barber</Text>
+          </Stylist>
+          <Stylist>
+            <figure>
+              <img src="https://picsum.photos/200" alt="Rando buddo" />
+            </figure>
+            <Text as="h5">Deanna</Text>
+            <Text as="h6">Stylist</Text>
+          </Stylist>
+          <Stylist>
+            <figure>
+              <img src="https://picsum.photos/200" alt="Rando buddo" />
+            </figure>
+            <Text as="h5">Alivia</Text>
+            <Text as="h6">Stylist</Text>
+          </Stylist>
+        </div>
+      </Section4>
+    </Container>
   </Layout>
 )
 

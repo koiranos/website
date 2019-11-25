@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Logo from '../assets/styleq-logo.svg';
 import Button from '../atoms/Button';
@@ -11,14 +12,15 @@ const Root = styled.header`
   padding: 1rem 4rem 1rem 2rem;
   border-left: solid 2rem var(--color-brand-2);
   img{
+    vertical-align: middle;
     width: 10rem;
   }
 `;
 
 const Header = () => (
   <Root>
-    <img src={Logo} alt="StyleQ Logo" />
-    <Button>Book now</Button>
+    <Link to="/"><img src={Logo} alt="StyleQ Logo" /></Link>
+    <Button cta>Book now</Button>
   </Root>
 );
 
