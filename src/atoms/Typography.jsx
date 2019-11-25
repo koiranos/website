@@ -52,6 +52,15 @@ const Text = styled.p`
   ${({ size }) => size && css`
     font-size: ${size};
   `}
+  ${({ intro }) => intro && css`
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: right;
+    line-height: 1.2;
+    @media(min-width: 520px) {
+      font-size: 9rem;
+    }
+  `}
 `;
 
 Text.propTypes = {

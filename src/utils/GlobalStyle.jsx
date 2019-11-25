@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   --color-success: #F5F5F8;
   --color-warning: #E06811;
   --font-primary: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --font-secondary: 'Titillium Web', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
   --font-tertiary: 'Bebas Neue', cursive;
   --round-radius-1: 1.5rem;
   --round-radius-2: 4rem;
@@ -42,7 +42,7 @@ body{
   padding: 4rem 0 0;
   background: var(--color-bg);
   color: var(--color-fg);
-  font: 1.6rem/1.5 var(--font-primary);
+  font: 1.6rem/1.5 var(--font-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

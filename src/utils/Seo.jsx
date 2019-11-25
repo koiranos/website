@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import SafariPinnedTab from '../assets/safari-pinned-tab.svg';
 
@@ -74,7 +74,8 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
       link={[
-        { rel: `mask-icon`, href: SafariPinnedTab, color: '#e62175' }
+        { rel: `mask-icon`, href: SafariPinnedTab, color: '#e62175' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' },
       ]}
     >
     </Helmet>
