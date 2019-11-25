@@ -5,6 +5,7 @@ import GlobalStyle from '../utils/GlobalStyle';
 import Footer from '../organisms/Footer';
 
 const Layout = ({ children, title }) => {
+  const { document } = window;
   useEffect(() => {}, [document.readyState]);
   return (
     <>
