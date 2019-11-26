@@ -71,7 +71,7 @@ const Stylist = ({ children, ...props }) => {
           <line className="top" x1="0" y1="0" x2="900" y2="0" />
           <line className="left" x1="0" y1="380" x2="0" y2="-980"/>
           <line className="bottom" x1="300" y1="380" x2="-900" y2="380"/>
-          <line className="right" x1="300" y1="0" x2="300" y2="1130"/>
+          <line className="right" x1="300" y1="0" x2="300" y2="1200"/>
         </svg>
       {/* <img src={src} alt={alt} /> */}
         <Image {...props} width="270" height="350" />
