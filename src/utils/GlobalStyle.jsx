@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 :root{
   --color-brand-1: #951249;
   --color-brand-2: #C41861;
-  --color-brand-3: #bada55;
+  --color-brand-3: #F46E83;
   --color-brand-4: #bada55;
   --color-brand-5: #bada55;
   --color-bg: #fff;
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
   --font-primary: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-secondary: 'Roboto', sans-serif;
   --font-tertiary: 'Bebas Neue', cursive;
-  --round-radius-1: 1.5rem;
+  --round-radius-1: .4rem;
   --round-radius-2: 4rem;
   --drop-shadow-1: .1rem .1rem .2rem rgba(0, 0, 0, .05);
   --drop-shadow-2: 0 .1rem .2rem rgba(0, 0, 0, .3);

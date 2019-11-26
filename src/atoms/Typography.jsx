@@ -41,7 +41,7 @@ const textStyle = (element) => ({
 
 const Text = styled.p`
   margin: 1rem 0;
-  line-height: 1.2;
+  line-height: 1.5;
   ${({ as }) => as && textStyle(as) }
   ${({ transform }) => transform && css`
     text-transform: ${transform};

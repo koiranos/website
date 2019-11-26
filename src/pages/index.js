@@ -7,6 +7,7 @@ import BGImage from '../assets/bg-lady.webp';
 import Text from '../atoms/Typography';
 import Container from '../utils/Container';
 import Stylist from '../molecules/Stylist';
+import Review from '../molecules/Review';
 
 const Section1 = styled.section`
   --fade-bg: 255, 255, 255;
@@ -68,7 +69,17 @@ const Section1 = styled.section`
   }
 `;
 
-const Section3 = styled.section``;
+const Section3 = styled.section`
+  padding: 15rem 0;
+  > div{
+    margin: 4rem 0;
+    @media (min-width: 975px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 4rem;
+    }
+  }
+`;
 
 const Section4 = styled.section`
   padding: 6rem 0;
@@ -99,24 +110,73 @@ const IndexPage = () => (
       <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
     </Section1>
     <MidSection>
-    <svg viewBox="0 0 1220 1308" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#f1d5e1" strokeWidth="1.5"><path d="m1218.38 822.385s-733.167-105.117-569.399 423.715c163.769 528.83 220.925 915.76-648.981 797.24" transform="matrix(.9999955602 0 0 .99999879156 .75 -813.129)"/><path d="m1187.38 823.995s-702.167-106.727-538.399 422.105c163.769 528.83 189.925 923.29-679.981 804.77" transform="matrix(.9999955602 0 0 .99999879156 31.749986108 -790.1289908126)"/><path d="m1149.38 821.957s-664.167-104.689-500.399 424.143c163.769 528.83 151.925 918.7-717.981 800.18" transform="matrix(.9999955602 0 0 .99999879156 69.749950656 -761.128822459)"/></g></svg>
+      <svg viewBox="0 0 1220 1308" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#f1d5e1" strokeWidth="1.5"><path d="m1218.38 822.385s-733.167-105.117-569.399 423.715c163.769 528.83 220.925 915.76-648.981 797.24" transform="matrix(.9999955602 0 0 .99999879156 .75 -813.129)"/><path d="m1187.38 823.995s-702.167-106.727-538.399 422.105c163.769 528.83 189.925 923.29-679.981 804.77" transform="matrix(.9999955602 0 0 .99999879156 31.749986108 -790.1289908126)"/><path d="m1149.38 821.957s-664.167-104.689-500.399 424.143c163.769 528.83 151.925 918.7-717.981 800.18" transform="matrix(.9999955602 0 0 .99999879156 69.749950656 -761.128822459)"/></g></svg>
+      <Container>
+        <section>
+          <Text as="h2">Barbers</Text>
+        </section>
+      </Container>
     </MidSection>
     <Container>
       <Section3>
         <Text as="h2" subheading>REVIEWS</Text>
+        <div>
+          <Review src="deanna.webp" alt="Rando buddo">
+            <Text as="h5">Shakeera Williams</Text>
+            <Text>
+              I had the ultimate experience using styleq to find good stylists
+              in the area.
+            </Text>
+          </Review>
+          <Review src="deanna.webp" alt="Rando buddo">
+            <Text as="h5">Shakeera Williams</Text>
+            <Text>
+              I had the ultimate experience using styleq to find good stylists
+              in the area.
+            </Text>
+          </Review>
+          <Review src="deanna.webp" alt="Rando buddo">
+            <Text as="h5">Shakeera Williams</Text>
+            <Text>
+              I had the ultimate experience using styleq to find good stylists
+              in the area.
+            </Text>
+          </Review>
+          <Review src="deanna.webp" alt="Rando buddo">
+            <Text as="h5">Shakeera Williams</Text>
+            <Text>
+              I had the ultimate experience using styleq to find good stylists
+              in the area.
+            </Text>
+          </Review>
+          <Review src="deanna.webp" alt="Rando buddo">
+            <Text as="h5">Shakeera Williams</Text>
+            <Text>
+              I had the ultimate experience using styleq to find good stylists
+              in the area.
+            </Text>
+          </Review>
+          <Review src="deanna.webp" alt="Rando buddo">
+            <Text as="h5">Shakeera Williams</Text>
+            <Text>
+              I had the ultimate experience using styleq to find good stylists
+              in the area.
+            </Text>
+          </Review>
+        </div>
       </Section3>
       <Section4>
         <Text as="h2" align="right" subheading>OUR STYLISTS</Text>
         <div>
-          <Stylist src="wes.webp" alt="Rando buddo">
+          <Stylist src="wes.webp" alt="Wes - A barber">
             <Text as="h5">Wes</Text>
             <Text as="h6">Barber</Text>
           </Stylist>
-          <Stylist src="deanna.webp" alt="Rando buddo">
+          <Stylist src="deanna.webp" alt="Deanna - A stylist">
             <Text as="h5">Deanna</Text>
             <Text as="h6">Stylist</Text>
           </Stylist>
-          <Stylist src="wes.webp" alt="Rando buddo">
+          <Stylist src="wes.webp" alt="Alivia - A stylist">
             <Text as="h5">Alivia</Text>
             <Text as="h6">Stylist</Text>
           </Stylist>
