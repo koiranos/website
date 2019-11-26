@@ -11,36 +11,59 @@ import Stylist from '../molecules/Stylist';
 const Section1 = styled.section`
   --fade-bg: 255, 255, 255;
   position: relative;
-  height: 60rem;
-  padding: 5rem 8rem 1rem 2rem;
+  min-height: 30vh;
+  padding: 3rem 2rem 1rem 1rem;
   background: url(${BGImage}) no-repeat;
-  background-position: 15% 100%;
+  background-size: 50% auto;
+  background-position: 0% 100%;
   &::after{
     content: '';
     position: absolute;
     left: 0;
     right: 0;
     bottom: -1rem;
-    height: 25rem;
+    height: 15rem;
     background: linear-gradient(to top, rgba(var(--fade-bg), 1) 10%, rgba(var(--fade-bg), 0));
   }
+  @media(min-width: 720px) {
+    background-size 40rem auto;
+  }
+  @media(min-width: 1020px) {
+    height: 60rem;
+    background-size: 60% auto;
+    background-position: 15% 100%;
+    &::after{
+      height: 25rem;
+    }
+  }
+  @media(min-width: 1100px) {
+    background-size: auto;
+    padding: 5rem 8rem 1rem 2rem;
+  }
   h5{
-    position: absolute;
-    top: 9rem;
-    left: 2rem;
-    writing-mode: vertical-lr;
-    transform: scale(-1);
+    margin-bottom: 8rem;
     background: linear-gradient(to top, #7e2169, #E62175);
-    background-size: 200% auto;
     color: #000;
     text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
     span{
-      position: relative;
-      bottom: .5rem;
-      background: inherit;
+      display: none;
+    }
+    @media(min-width: 1020px) {
+      position: absolute;
+      top: 9rem;
+      left: 2rem;
+      writing-mode: vertical-lr;
+      transform: scale(-1);
+      span{
+        display: inline;
+        position: relative;
+        bottom: .5rem;
+        background: inherit;
+      }
     }
   }
 `;
@@ -50,9 +73,12 @@ const Section3 = styled.section``;
 const Section4 = styled.section`
   padding: 6rem 0;
  > div{
-    @media (min-width: 520px) {
+    @media (min-width: 975px) {
       display: grid;
       grid-template-columns: 300px 300px 300px;
+      grid-gap: calc((95vw - 915px) / 2);
+    }
+    @media (min-width: 1200px) {
       grid-gap: calc((1100px - 900px) / 2);
     }
  }
@@ -62,11 +88,11 @@ const IndexPage = () => (
   <Layout title="Home">
     <Header />
     <Section1>
-      <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
       <Text as="h5">
         <Text as="span">‹‹‹</Text>
         <a href="#footer">Are you a stylists? Sign up with us now</a>
-        </Text>
+      </Text>
+      <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
     </Section1>
     <Container>
       <Section3>
