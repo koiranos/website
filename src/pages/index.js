@@ -75,24 +75,15 @@ const IndexPage = () => (
       <Section4>
         <Text as="h2" align="right" subheading>OUR STYLISTS</Text>
         <div>
-          <Stylist>
-            <figure>
-              <img src="https://picsum.photos/200" alt="Rando buddo" />
-            </figure>
+          <Stylist src="wes.webp" alt="Rando buddo">
             <Text as="h5">Wes</Text>
             <Text as="h6">Barber</Text>
           </Stylist>
-          <Stylist>
-            <figure>
-              <img src="https://picsum.photos/200" alt="Rando buddo" />
-            </figure>
+          <Stylist src="deanna.webp" alt="Rando buddo">
             <Text as="h5">Deanna</Text>
             <Text as="h6">Stylist</Text>
           </Stylist>
-          <Stylist>
-            <figure>
-              <img src="https://picsum.photos/200" alt="Rando buddo" />
-            </figure>
+          <Stylist src="wes.webp" alt="Rando buddo">
             <Text as="h5">Alivia</Text>
             <Text as="h6">Stylist</Text>
           </Stylist>
