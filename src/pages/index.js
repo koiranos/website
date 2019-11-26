@@ -84,6 +84,10 @@ const Section4 = styled.section`
  }
 `;
 
+const MidSection = styled.div`
+ padding: 4rem 0;
+`;
+
 const IndexPage = () => (
   <Layout title="Home">
     <Header />
@@ -94,6 +98,9 @@ const IndexPage = () => (
       </Text>
       <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
     </Section1>
+    <MidSection>
+    <svg viewBox="0 0 1220 1308" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#f1d5e1" strokeWidth="1.5"><path d="m1218.38 822.385s-733.167-105.117-569.399 423.715c163.769 528.83 220.925 915.76-648.981 797.24" transform="matrix(.9999955602 0 0 .99999879156 .75 -813.129)"/><path d="m1187.38 823.995s-702.167-106.727-538.399 422.105c163.769 528.83 189.925 923.29-679.981 804.77" transform="matrix(.9999955602 0 0 .99999879156 31.749986108 -790.1289908126)"/><path d="m1149.38 821.957s-664.167-104.689-500.399 424.143c163.769 528.83 151.925 918.7-717.981 800.18" transform="matrix(.9999955602 0 0 .99999879156 69.749950656 -761.128822459)"/></g></svg>
+    </MidSection>
     <Container>
       <Section3>
         <Text as="h2" subheading>REVIEWS</Text>
