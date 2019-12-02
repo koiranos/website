@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import Rellax from 'rellax';
 
 import Layout from '../templates/Layout';
 import Header from '../organisms/Header';
@@ -118,106 +119,111 @@ const Features = styled.div`
   }
 `;
 
-const IndexPage = () => (
-  <Layout title="Home">
-    <Header />
-    <Section1>
-      <Text as="h5">
-        <Text as="span">‹‹‹</Text>
-        <a href="#footer">Are you a stylists? Sign up with us now</a>
-      </Text>
-      <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
-    </Section1>
-    <MidSection>
-      <svg viewBox="0 0 1220 1308" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#f1d5e1" strokeWidth="1.5"><path d="m1218.38 822.385s-733.167-105.117-569.399 423.715c163.769 528.83 220.925 915.76-648.981 797.24" transform="matrix(.9999955602 0 0 .99999879156 .75 -813.129)"/><path d="m1187.38 823.995s-702.167-106.727-538.399 422.105c163.769 528.83 189.925 923.29-679.981 804.77" transform="matrix(.9999955602 0 0 .99999879156 31.749986108 -790.1289908126)"/><path d="m1149.38 821.957s-664.167-104.689-500.399 424.143c163.769 528.83 151.925 918.7-717.981 800.18" transform="matrix(.9999955602 0 0 .99999879156 69.749950656 -761.128822459)"/></g></svg>
+const IndexPage = () => {
+  useEffect(() => {
+    new Rellax('.rellax', { speed: 2 });
+  }, []);
+  return (
+    <Layout title="Home">
+      <Header />
+      <Section1>
+        <Text as="h5">
+          <Text as="span">‹‹‹</Text>
+          <a href="#footer">Are you a stylists? Sign up with us now</a>
+        </Text>
+        <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
+      </Section1>
+      <MidSection>
+        <svg viewBox="0 0 1220 1308" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#f1d5e1" strokeWidth="1.5"><path d="m1218.38 822.385s-733.167-105.117-569.399 423.715c163.769 528.83 220.925 915.76-648.981 797.24" transform="matrix(.9999955602 0 0 .99999879156 .75 -813.129)"/><path d="m1187.38 823.995s-702.167-106.727-538.399 422.105c163.769 528.83 189.925 923.29-679.981 804.77" transform="matrix(.9999955602 0 0 .99999879156 31.749986108 -790.1289908126)"/><path d="m1149.38 821.957s-664.167-104.689-500.399 424.143c163.769 528.83 151.925 918.7-717.981 800.18" transform="matrix(.9999955602 0 0 .99999879156 69.749950656 -761.128822459)"/></g></svg>
+        <Container>
+          <Features>
+            <Feature image="feature-1.webp" origin="left">
+              <Text as="h2">Barbers</Text>
+              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+            </Feature>
+            <Feature image="feature-2.webp" origin="right">
+              <Text as="h2">Hairstylists/Haircuts</Text>
+              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+            </Feature>
+            <Feature image="feature-1.webp" origin="left">
+              <Text as="h2">Braids/Locks</Text>
+              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+            </Feature>
+            <Feature image="feature-2.webp" origin="right">
+              <Text as="h2">Blowouts</Text>
+              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+            </Feature>
+          </Features>
+        </Container>
+      </MidSection>
       <Container>
-        <Features>
-          <Feature image="feature-1.webp" origin="left">
-            <Text as="h2">Barbers</Text>
-            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
-          </Feature>
-          <Feature image="feature-2.webp" origin="right">
-            <Text as="h2">Hairstylists/Haircuts</Text>
-            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
-          </Feature>
-          <Feature image="feature-1.webp" origin="left">
-            <Text as="h2">Braids/Locks</Text>
-            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
-          </Feature>
-          <Feature image="feature-2.webp" origin="right">
-            <Text as="h2">Blowouts</Text>
-            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
-          </Feature>
-        </Features>
+        <Section3>
+          <Text as="h2" subheading className="rellax" data-rellax-speed="2.2">REVIEWS</Text>
+          <div className="rellax" data-rellax-speed="2.2">
+            <Review src="deanna.webp" alt="Rando buddo">
+              <Text as="h5">Shakeera Williams</Text>
+              <Text>
+                I had the ultimate experience using styleq to find good stylists
+                in the area.
+              </Text>
+            </Review>
+            <Review src="deanna.webp" alt="Rando buddo">
+              <Text as="h5">Shakeera Williams</Text>
+              <Text>
+                I had the ultimate experience using styleq to find good stylists
+                in the area.
+              </Text>
+            </Review>
+            <Review src="deanna.webp" alt="Rando buddo">
+              <Text as="h5">Shakeera Williams</Text>
+              <Text>
+                I had the ultimate experience using styleq to find good stylists
+                in the area.
+              </Text>
+            </Review>
+            <Review src="deanna.webp" alt="Rando buddo">
+              <Text as="h5">Shakeera Williams</Text>
+              <Text>
+                I had the ultimate experience using styleq to find good stylists
+                in the area.
+              </Text>
+            </Review>
+            <Review src="deanna.webp" alt="Rando buddo">
+              <Text as="h5">Shakeera Williams</Text>
+              <Text>
+                I had the ultimate experience using styleq to find good stylists
+                in the area.
+              </Text>
+            </Review>
+            <Review src="deanna.webp" alt="Rando buddo">
+              <Text as="h5">Shakeera Williams</Text>
+              <Text>
+                I had the ultimate experience using styleq to find good stylists
+                in the area.
+              </Text>
+            </Review>
+          </div>
+        </Section3>
+        <Section4>
+          <Text as="h2" align="right" subheading className="rellax" data-rellax-speed="1.5">OUR STYLISTS</Text>
+          <div className="rellax" data-rellax-speed="1.5">
+            <Stylist src="wes.webp" alt="Wes - A barber">
+              <Text as="h5">Wes</Text>
+              <Text as="h6">Barber</Text>
+            </Stylist>
+            <Stylist src="deanna.webp" alt="Deanna - A stylist">
+              <Text as="h5">Deanna</Text>
+              <Text as="h6">Stylist</Text>
+            </Stylist>
+            <Stylist src="wes.webp" alt="Alivia - A stylist">
+              <Text as="h5">Alivia</Text>
+              <Text as="h6">Stylist</Text>
+            </Stylist>
+          </div>
+        </Section4>
       </Container>
-    </MidSection>
-    <Container>
-      <Section3>
-        <Text as="h2" subheading>REVIEWS</Text>
-        <div>
-          <Review src="deanna.webp" alt="Rando buddo">
-            <Text as="h5">Shakeera Williams</Text>
-            <Text>
-              I had the ultimate experience using styleq to find good stylists
-              in the area.
-            </Text>
-          </Review>
-          <Review src="deanna.webp" alt="Rando buddo">
-            <Text as="h5">Shakeera Williams</Text>
-            <Text>
-              I had the ultimate experience using styleq to find good stylists
-              in the area.
-            </Text>
-          </Review>
-          <Review src="deanna.webp" alt="Rando buddo">
-            <Text as="h5">Shakeera Williams</Text>
-            <Text>
-              I had the ultimate experience using styleq to find good stylists
-              in the area.
-            </Text>
-          </Review>
-          <Review src="deanna.webp" alt="Rando buddo">
-            <Text as="h5">Shakeera Williams</Text>
-            <Text>
-              I had the ultimate experience using styleq to find good stylists
-              in the area.
-            </Text>
-          </Review>
-          <Review src="deanna.webp" alt="Rando buddo">
-            <Text as="h5">Shakeera Williams</Text>
-            <Text>
-              I had the ultimate experience using styleq to find good stylists
-              in the area.
-            </Text>
-          </Review>
-          <Review src="deanna.webp" alt="Rando buddo">
-            <Text as="h5">Shakeera Williams</Text>
-            <Text>
-              I had the ultimate experience using styleq to find good stylists
-              in the area.
-            </Text>
-          </Review>
-        </div>
-      </Section3>
-      <Section4>
-        <Text as="h2" align="right" subheading>OUR STYLISTS</Text>
-        <div>
-          <Stylist src="wes.webp" alt="Wes - A barber">
-            <Text as="h5">Wes</Text>
-            <Text as="h6">Barber</Text>
-          </Stylist>
-          <Stylist src="deanna.webp" alt="Deanna - A stylist">
-            <Text as="h5">Deanna</Text>
-            <Text as="h6">Stylist</Text>
-          </Stylist>
-          <Stylist src="wes.webp" alt="Alivia - A stylist">
-            <Text as="h5">Alivia</Text>
-            <Text as="h6">Stylist</Text>
-          </Stylist>
-        </div>
-      </Section4>
-    </Container>
-  </Layout>
-)
+    </Layout>
+  );
+};
 
 export default IndexPage

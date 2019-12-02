@@ -38,17 +38,17 @@ const Root = styled.div`
       background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .5));
       transform: rotate(-45deg);
       transition: transform .5s var(--animation-easing);
-      ${({ origin }) => origin == 'left' && css`
+      ${({ origin }) => origin === 'left' && css`
         left: var(--backdrop-offset);
       `}
-      ${({ origin }) => origin == 'right' && css`
+      ${({ origin }) => origin === 'right' && css`
         right: var(--backdrop-offset);
       `}
     }
-    ${({ origin }) => origin == 'left' && css`
+    ${({ origin }) => origin === 'left' && css`
       margin-right: var(--kite-margin);
     `}
-    ${({ origin }) => origin == 'right' && css`
+    ${({ origin }) => origin === 'right' && css`
       margin-left: var(--kite-margin);
     `}
     @media(min-width: 520px) {
@@ -67,7 +67,7 @@ const Root = styled.div`
   ${({ origin }) => origin && css`
     text-align: ${origin};
   `}
-  ${({ origin }) => origin == 'right' && css`
+  ${({ origin }) => origin === 'right' && css`
     justify-content: flex-end;
     > :last-child{
       order: -1;
@@ -76,7 +76,7 @@ const Root = styled.div`
 `;
 
 const Feature = ({ children, origin, image }) => (
-  <Root origin={origin}>
+  <Root origin={origin} className='rellax'>
     <div>
       <div><Kite src={image} alt="Featured image" /></div>
       <span />
