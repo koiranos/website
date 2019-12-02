@@ -159,7 +159,7 @@ const IndexPage = () => {
       <Container>
         <Section3>
           <Text as="h2" subheading className="rellax" data-rellax-speed="2.2">REVIEWS</Text>
-          <div className="rellax" data-rellax-speed="2.2">
+          <div className="rellax" data-rellax-speed="2">
             <Review src="deanna.webp" alt="Rando buddo">
               <Text as="h5">Shakeera Williams</Text>
               <Text>
@@ -206,7 +206,7 @@ const IndexPage = () => {
         </Section3>
         <Section4>
           <Text as="h2" align="right" subheading className="rellax" data-rellax-speed="1.5">OUR STYLISTS</Text>
-          <div className="rellax" data-rellax-speed="1.5">
+          <div className="rellax" data-rellax-speed="1.4">
             <Stylist src="wes.webp" alt="Wes - A barber">
               <Text as="h5">Wes</Text>
               <Text as="h6">Barber</Text>

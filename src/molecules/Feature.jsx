@@ -7,7 +7,9 @@ const Root = styled.div`
   --backdrop-offset: 5rem;
   --kite-margin: 10rem;
   display: flex;
-  margin-bottom: 18rem;
+  &:not(:last-of-type){
+    margin-bottom: 15rem;
+  }
   h2{
     color: var(--color-brand-2);
   }
@@ -73,6 +75,11 @@ const Root = styled.div`
       order: -1;
     }
   `}
+  @media (min-width: 1020px) {
+    &:not(:last-of-type){
+      margin-bottom: 22rem;
+    }
+  }
 `;
 
 const Feature = ({ children, origin, image }) => (
