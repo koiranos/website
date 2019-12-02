@@ -24,7 +24,7 @@ const textStyle = (element) => ({
     font-size: 1.6rem;
   `,
   p: () => css`
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   `,
   span: () => css`
     margin: 0;
@@ -51,6 +51,9 @@ const Text = styled.p`
   `}
   ${({ size }) => size && css`
     font-size: ${size};
+  `}
+  ${({ weight }) => weight && css`
+    font-weight: ${weight};
   `}
   ${({ intro }) => intro && css`
     margin: 1rem;

@@ -8,6 +8,7 @@ import Text from '../atoms/Typography';
 import Container from '../utils/Container';
 import Stylist from '../molecules/Stylist';
 import Review from '../molecules/Review';
+import Feature from '../molecules/Feature';
 
 const Section1 = styled.section`
   --fade-bg: 255, 255, 255;
@@ -96,7 +97,25 @@ const Section4 = styled.section`
 `;
 
 const MidSection = styled.div`
+ position: relative;
  padding: 4rem 0;
+ svg{
+   position: relative;
+   z-index: -10;
+ }
+`;
+
+const Features = styled.div`
+  position: absolute;
+  top: 0;
+  width: 95vw;
+  margin: 5rem 0;
+  padding: 4rem 2rem 2rem;
+  max-width: var(--site-width);
+  @media(min-width: 520px) {
+    margin: 10rem 0;
+    padding: 8rem 4rem 2rem;
+  }
 `;
 
 const IndexPage = () => (
@@ -112,9 +131,24 @@ const IndexPage = () => (
     <MidSection>
       <svg viewBox="0 0 1220 1308" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#f1d5e1" strokeWidth="1.5"><path d="m1218.38 822.385s-733.167-105.117-569.399 423.715c163.769 528.83 220.925 915.76-648.981 797.24" transform="matrix(.9999955602 0 0 .99999879156 .75 -813.129)"/><path d="m1187.38 823.995s-702.167-106.727-538.399 422.105c163.769 528.83 189.925 923.29-679.981 804.77" transform="matrix(.9999955602 0 0 .99999879156 31.749986108 -790.1289908126)"/><path d="m1149.38 821.957s-664.167-104.689-500.399 424.143c163.769 528.83 151.925 918.7-717.981 800.18" transform="matrix(.9999955602 0 0 .99999879156 69.749950656 -761.128822459)"/></g></svg>
       <Container>
-        <section>
-          <Text as="h2">Barbers</Text>
-        </section>
+        <Features>
+          <Feature image="feature-1.webp" origin="left">
+            <Text as="h2">Barbers</Text>
+            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+          </Feature>
+          <Feature image="feature-2.webp" origin="right">
+            <Text as="h2">Hairstylists/Haircuts</Text>
+            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+          </Feature>
+          <Feature image="feature-1.webp" origin="left">
+            <Text as="h2">Braids/Locks</Text>
+            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+          </Feature>
+          <Feature image="feature-2.webp" origin="right">
+            <Text as="h2">Blowouts</Text>
+            <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+          </Feature>
+        </Features>
       </Container>
     </MidSection>
     <Container>
