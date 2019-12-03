@@ -72,7 +72,7 @@ const Section1 = styled.section`
 `;
 
 const Section3 = styled.section`
-  padding: 15rem 0;
+  padding: 10rem 0;
   > div{
     margin: 4rem 0;
     @media (min-width: 975px) {
@@ -84,7 +84,7 @@ const Section3 = styled.section`
 `;
 
 const Section4 = styled.section`
-  padding: 6rem 0;
+  padding: 1rem 0;
  > div{
     @media (min-width: 975px) {
       display: grid;
@@ -145,11 +145,11 @@ const IndexPage = () => {
               <Text as="h2">Hairstylists/Haircuts</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
-            <Feature image="feature-1.webp" origin="left">
+            <Feature image="feature-3.webp" origin="left">
               <Text as="h2">Braids/Locks</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
-            <Feature image="feature-2.webp" origin="right">
+            <Feature image="feature-4.webp" origin="right">
               <Text as="h2">Blowouts</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
@@ -215,7 +215,7 @@ const IndexPage = () => {
               <Text as="h5">Deanna</Text>
               <Text as="h6">Stylist</Text>
             </Stylist>
-            <Stylist src="wes.webp" alt="Alivia - A stylist">
+            <Stylist src="alivia.webp" alt="Alivia - A stylist">
               <Text as="h5">Alivia</Text>
               <Text as="h6">Stylist</Text>
             </Stylist>
