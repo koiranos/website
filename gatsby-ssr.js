@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function onRenderBody({ setHeadComponents, setPostBodyComponents }) {
+export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
   setHeadComponents([
     <script dangerouslySetInnerHTML={{__html: `
     !function(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){
