@@ -105,16 +105,16 @@ const MidSection = styled.div`
  position: relative;
  padding: 4rem 0;
  svg{
-   position: relative;
+   position: absolute;
+   width: 100vw;
+   height: 100%;
    z-index: -10;
  }
 `;
 
 const Features = styled.div`
-  position: absolute;
-  top: 0;
   width: 95vw;
-  margin: 5rem 0;
+  margin: 5rem auto;
   padding: 4rem 2rem 2rem;
   max-width: var(--site-width);
   @media(min-width: 520px) {
@@ -142,19 +142,19 @@ const IndexPage = () => {
         <Container>
           <Features>
             <Feature image="feature-1.webp" origin="left">
-              <Text as="h2">Barbers</Text>
+              <Text as="h2" truncate="break">Barbers</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
             <Feature image="feature-2.webp" origin="right">
-              <Text as="h2">Hairstylists/Haircuts</Text>
+              <Text as="h2" truncate="break">Hairstylists/Haircuts</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
             <Feature image="feature-3.webp" origin="left">
-              <Text as="h2">Braids/Locks</Text>
+              <Text as="h2" truncate="break">Braids/Locks</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
             <Feature image="feature-4.webp" origin="right">
-              <Text as="h2">Blowouts</Text>
+              <Text as="h2" truncate="break">Blowouts</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
           </Features>

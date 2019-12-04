@@ -7,6 +7,7 @@ const Root = styled.div`
   --backdrop-offset: 5rem;
   --kite-margin: 10rem;
   display: flex;
+  width: 100%;
   &:not(:last-of-type){
     margin-bottom: 15rem;
   }

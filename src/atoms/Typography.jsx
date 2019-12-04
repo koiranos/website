@@ -9,7 +9,10 @@ const textStyle = (element) => ({
     }
   `,
   h2: () => css`
-    font-size: 4rem;
+    font-size: 2.8rem;
+    @media(min-width: 720px) {
+      font-size: 4rem;
+    }
   `,
   h3: () => css`
     font-size: 3.6rem;
@@ -79,6 +82,15 @@ const Text = styled.p`
     @media(min-width: 920px) {
       font-size: 10rem;
     }
+  `}
+  ${({ truncate }) => truncate == 'break' && css`
+    word-break: break-word;
+  `}
+  ${({ truncate }) => truncate == 'ellipsis' && css`
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   `}
 `;
 
