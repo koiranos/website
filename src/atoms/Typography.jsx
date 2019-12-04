@@ -83,10 +83,10 @@ const Text = styled.p`
       font-size: 10rem;
     }
   `}
-  ${({ truncate }) => truncate == 'break' && css`
+  ${({ truncate }) => truncate === 'break' && css`
     word-break: break-word;
   `}
-  ${({ truncate }) => truncate == 'ellipsis' && css`
+  ${({ truncate }) => truncate === 'ellipsis' && css`
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
