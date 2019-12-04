@@ -182,7 +182,7 @@ const IndexPage = () => {
         <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
       </Section1>
       <MidSection>
-        <svg viewBox="0 0 1220 1308" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#f1d5e1" strokeWidth="1.5"><path d="m1218.38 822.385s-733.167-105.117-569.399 423.715c163.769 528.83 220.925 915.76-648.981 797.24" transform="matrix(.9999955602 0 0 .99999879156 .75 -813.129)"/><path d="m1187.38 823.995s-702.167-106.727-538.399 422.105c163.769 528.83 189.925 923.29-679.981 804.77" transform="matrix(.9999955602 0 0 .99999879156 31.749986108 -790.1289908126)"/><path d="m1149.38 821.957s-664.167-104.689-500.399 424.143c163.769 528.83 151.925 918.7-717.981 800.18" transform="matrix(.9999955602 0 0 .99999879156 69.749950656 -761.128822459)"/></g></svg>
+        <svg viewBox="0 0 2000 1308" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path fill="none" d="M0 0h2000v1308H0z"/><clipPath id="a"><path d="M0 0h2000v1308H0z"/></clipPath><g clipPath="url(#a)"><path d="M1218.38 822.385S485.213 717.268 648.981 1246.1C812.75 1774.93 869.906 2161.86 0 2043.34" fill="none" stroke="#f1d5e1" strokeWidth="1.5" transform="matrix(1.64091 0 0 1 .75 -813.129)"/><path d="M1187.38 823.995S485.213 717.268 648.981 1246.1C812.75 1774.93 838.906 2169.39-31 2050.87" fill="none" stroke="#f1d5e1" strokeWidth="1.5" transform="matrix(1.64091 0 0 1 51.619 -790.129)"/><path d="M1149.38 821.957S485.213 717.268 648.981 1246.1C812.75 1774.93 800.906 2164.8-69 2046.28" fill="none" stroke="#f1d5e1" strokeWidth="1.5" transform="matrix(1.64091 0 0 1 113.973 -761.129)"/></g></svg>
         <Container>
           <Features>
             <Feature image="feature-1.webp" origin="left">
