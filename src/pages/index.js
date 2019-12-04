@@ -72,11 +72,15 @@ const Section1 = styled.section`
 `;
 
 const Section3 = styled.section`
-  padding: 10rem 0;
+  padding: 10rem 3rem;
   > div{
     margin: 4rem 0;
-    @media (min-width: 975px) {
+    @media(min-width: 720px) {
       display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
+    @media (min-width: 975px) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 4rem;
     }
@@ -84,7 +88,7 @@ const Section3 = styled.section`
 `;
 
 const Section4 = styled.section`
-  padding: 1rem 0;
+  padding: 2rem 0 1rem;
  > div{
     @media (min-width: 975px) {
       display: grid;
@@ -205,7 +209,7 @@ const IndexPage = () => {
           </div>
         </Section3>
         <Section4>
-          <Text as="h2" align="right" subheading className="rellax" data-rellax-speed="1.5">OUR STYLISTS</Text>
+          <Text as="h2" align="right" subheading className="rellax" data-rellax-speed="1.3">OUR STYLISTS</Text>
           <div className="rellax" data-rellax-speed="1.4">
             <Stylist src="wes.webp" alt="Wes - A barber">
               <Text as="h5">Wes</Text>

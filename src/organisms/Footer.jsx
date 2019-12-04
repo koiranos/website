@@ -10,7 +10,7 @@ const Root = styled.footer`
 `;
 
 const Footer = () => (
-  <Root>
+  <Root id="footer">
     <Container>
       <Text as="h2" subheading>SIGN UP AS A STYLIST</Text>
       <Text align="center">Copyright © {new Date().getFullYear()} StyleQ</Text>
