@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   --color-brand-5: #bada55;
   --color-bg: #fff;
   --color-fg: #222;
-  --color-link: #2f65c7;
+  --color-link: var(--color-brand-3);
   --color-focus: var(--color-brand-1);
   --color-highlight: var(--color-brand-1);
   --color-error: #BC1717;

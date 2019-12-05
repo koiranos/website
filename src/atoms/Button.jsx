@@ -9,6 +9,7 @@ const Button = styled.button`
   border: 0;
   background: var(--button-bg);
   color: var(--button-fg);
+  color: #fff;
   text-align: center;
   cursor: pointer;
   + a, + button{
@@ -17,12 +18,17 @@ const Button = styled.button`
   ${({ curvy }) => curvy && css`
     border-radius: .4rem;
   `}
+  ${({ primary }) => primary && css`
+    background: var(--color-brand-2);
+    &:hover{
+      background: #ad1053;
+    }
+  `}
   ${({ cta }) => cta && css`
     position: relative;
     height: 4.5rem;
     background: var(--color-brand-2);
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .5));
-    color: #fff;
     &::after{
       content: '';
       position: absolute;
@@ -42,6 +48,9 @@ const Button = styled.button`
         transform: translate3d(0, 0, 0);
       }
     }
+  `}
+  ${({ size }) => size === 'large' && css`
+    padding: 2rem 5rem;
   `}
 `;
 
