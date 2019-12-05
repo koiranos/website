@@ -20,7 +20,7 @@ const Root = styled.header`
 const Header = () => (
   <Root>
     <Link to="/"><img src={Logo} alt="StyleQ Logo" /></Link>
-    <Button cta>Book now</Button>
+    <Button as="a" cta rel="noopener" target="_top" href="https://square.site/book/8QS3JWPX38EJD/scade-test-milwaukee-wi">Book now</Button>
   </Root>
 );
 
