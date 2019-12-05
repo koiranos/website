@@ -191,15 +191,15 @@ const IndexPage = () => {
             </Feature>
             <Feature image="feature-2.webp" origin="right">
               <Text as="h2" truncate="break">Hairstylists/Haircuts</Text>
-              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+              <Text as="h4" weight="300">Professional stylists giving you just your desired hair look.</Text>
             </Feature>
             <Feature image="feature-3.webp" origin="left">
               <Text as="h2" truncate="break">Braids/Locks</Text>
-              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+              <Text as="h4" weight="300">Get braids and updos for any hair type. We make it look great on you.</Text>
             </Feature>
             <Feature image="feature-4.webp" origin="right">
               <Text as="h2" truncate="break">Blowouts</Text>
-              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+              <Text as="h4" weight="300">You get a blowout so good it makes you want to go out.</Text>
             </Feature>
           </Features>
         </Container>
