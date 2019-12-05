@@ -209,24 +209,21 @@ const IndexPage = () => {
           <Text as="h2" subheading className="rellax" data-rellax-speed="2.2">REVIEWS</Text>
           <div className="rellax" data-rellax-speed="2">
             <Review src="deanna.webp" alt="Rando buddo">
-              <Text as="h5">Shakeera Williams</Text>
+              <Text as="h5">Nikhil</Text>
               <Text>
-                I had the ultimate experience using styleq to find good stylists
-                in the area.
+               Booking online was easy and the haircut was better than I was expecting. Great salon!
               </Text>
             </Review>
             <Review src="deanna.webp" alt="Rando buddo">
-              <Text as="h5">Shakeera Williams</Text>
+              <Text as="h5">Molly</Text>
               <Text>
-                I had the ultimate experience using styleq to find good stylists
-                in the area.
+                Alivia did a fantastic job. She asked a lot of questions to make sure we were on the same page, and then executed perfection.
               </Text>
             </Review>
             <Review src="deanna.webp" alt="Rando buddo">
-              <Text as="h5">Shakeera Williams</Text>
+              <Text as="h5">Matt</Text>
               <Text>
-                I had the ultimate experience using styleq to find good stylists
-                in the area.
+                Going into my appointment, I wasn't sure what to expect. Howver, after the consultation process, my needs were met and exceeded.
               </Text>
             </Review>
             <Review src="deanna.webp" alt="Rando buddo">
