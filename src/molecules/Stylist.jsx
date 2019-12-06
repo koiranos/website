@@ -17,6 +17,23 @@ const Root = styled.div`
   }
 `;
 
+const EmptyFrame = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 38rem;
+  margin: 6rem auto;
+  border: 4.5px solid var(--color-brand-2);
+  &::after{
+    content: 'JOIN OUR STYLISTS';
+    color: var(--color-brand-2);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+`;
+
 const Frame = styled.div`
   position: relative;
   display: flex;
@@ -62,7 +79,10 @@ const Frame = styled.div`
   }
 `;
 
-const Stylist = ({ children, ...props }) => {
+const Stylist = ({ children, empty, ...props }) => {
+  if(empty) {
+    return (<EmptyFrame />)
+  }
 
   return (
     <Root>
