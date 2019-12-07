@@ -11,7 +11,7 @@ const Kite = ({ src, ...props }) => {
             relativePath
             childImageSharp {
               fixed(width: 270, height: 270, quality: 100) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }

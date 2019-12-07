@@ -83,10 +83,10 @@ const Root = styled.div`
   }
 `;
 
-const Feature = ({ children, origin, image }) => (
+const Feature = ({ children, origin, image, ...props }) => (
   <Root origin={origin} className='rellax'>
     <div>
-      <div><Kite src={image} alt="Featured image" /></div>
+      <div><Kite src={image} loading="lazy" {...props} /></div>
       <span />
     </div>
     <div>

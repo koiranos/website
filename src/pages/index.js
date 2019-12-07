@@ -4,7 +4,8 @@ import Rellax from 'rellax';
 
 import Layout from '../templates/Layout';
 import Header from '../organisms/Header';
-import BGImage from '../assets/bg-lady.webp';
+import BGImageWebP from '../assets/bg-lady.webp';
+import BGImageJpeg from '../assets/bg-lady.jpg';
 import Text from '../atoms/Typography';
 import Container from '../utils/Container';
 import Stylist from '../molecules/Stylist';
@@ -16,7 +17,10 @@ const Section1 = styled.section`
   position: relative;
   min-height: 30vh;
   padding: 3rem 2rem 1rem 1rem;
-  background: url(${BGImage}) no-repeat;
+  background: url(${BGImageWebP}) no-repeat;
+  .no-webp & {
+    background: url(${BGImageJpeg}) no-repeat;
+  }
   background-size: 50% auto;
   background-position: 0% 100%;
   &::after{
@@ -186,19 +190,19 @@ const IndexPage = () => {
         <svg viewBox="0 0 2000 1308" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path fill="none" d="M0 0h2000v1308H0z"/><clipPath id="a"><path d="M0 0h2000v1308H0z"/></clipPath><g clipPath="url(#a)"><path d="M1218.38 822.385S485.213 717.268 648.981 1246.1C812.75 1774.93 869.906 2161.86 0 2043.34" fill="none" stroke="#f1d5e1" strokeWidth="1.5" transform="matrix(1.64091 0 0 1 .75 -813.129)"/><path d="M1187.38 823.995S485.213 717.268 648.981 1246.1C812.75 1774.93 838.906 2169.39-31 2050.87" fill="none" stroke="#f1d5e1" strokeWidth="1.5" transform="matrix(1.64091 0 0 1 51.619 -790.129)"/><path d="M1149.38 821.957S485.213 717.268 648.981 1246.1C812.75 1774.93 800.906 2164.8-69 2046.28" fill="none" stroke="#f1d5e1" strokeWidth="1.5" transform="matrix(1.64091 0 0 1 113.973 -761.129)"/></g></svg>
         <Container>
           <Features>
-            <Feature image="feature-1.webp" origin="left">
+            <Feature image="feature-1.jpg" origin="left" alt="Barber giving haircut">
               <Text as="h2" truncate="break">Barbers</Text>
               <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
             </Feature>
-            <Feature image="feature-2.webp" origin="right">
+            <Feature image="feature-2.jpg" origin="right" alt="Hairstylist straightening lady's hair">
               <Text as="h2" truncate="break">Hairstylists/Haircuts</Text>
               <Text as="h4" weight="300">Professional stylists giving you just your desired hair look.</Text>
             </Feature>
-            <Feature image="feature-3.webp" origin="left">
+            <Feature image="feature-3.jpeg" origin="left" alt="Lady with braids hairstyle">
               <Text as="h2" truncate="break">Braids/Locks</Text>
               <Text as="h4" weight="300">Get braids and updos for any hair type. We make it look great on you.</Text>
             </Feature>
-            <Feature image="feature-4.webp" origin="right">
+            <Feature image="feature-4.jpeg" origin="right" alt="Lady with blowout hair">
               <Text as="h2" truncate="break">Blowouts</Text>
               <Text as="h4" weight="300">You get a blowout so good it makes you want to go out.</Text>
             </Feature>
@@ -209,38 +213,38 @@ const IndexPage = () => {
         <Section3>
           <Text as="h2" subheading className="rellax" data-rellax-speed="2.2">REVIEWS</Text>
           <div className="rellax" data-rellax-speed="2">
-            <Review src="anon.webp" alt="Rando buddo">
+            <Review src="anon.jpg" alt="Anonymouse user">
               <Text as="h5">Nikhil</Text>
               <Text>
                Booking online was easy and the haircut was better than I was expecting. Great salon!
               </Text>
             </Review>
-            <Review src="reviewer-2.webp" alt="Rando buddo">
+            <Review src="reviewer-2.jpg" alt="Molly">
               <Text as="h5">Molly</Text>
               <Text>
                 Alivia did a fantastic job. She asked a lot of questions to make sure we were on the same page, and then executed perfection.
               </Text>
             </Review>
-            <Review src="reviewer-3.webp" alt="Rando buddo">
+            <Review src="reviewer-3.jpg" alt="Matt Kemper">
               <Text as="h5">Matt</Text>
               <Text>
                 Going into my appointment, I wasn't sure what to expect. Howver, after the consultation process, my needs were met and exceeded.
               </Text>
             </Review>
-            <Review src="anon.webp" alt="Rando buddo">
+            <Review src="anon.jpg" alt="Anonymous user">
               <Text as="h5">Nic</Text>
               <Text>
               StyleQ made it extremely easy for me to find a stylist that was able to help me decide on a style that fit my looks.
               </Text>
             </Review>
-            <Review src="deanna.webp" alt="Rando buddo">
+            <Review src="reviewer-5.jpg" alt="Deanna">
               <Text as="h5">Deanna</Text>
               <Text>
                 I had the ultimate experience using styleq to find clients
                 in the area.
               </Text>
             </Review>
-            <Review src="alivia.webp" alt="Rando buddo">
+            <Review src="reviewer-6.jpg" alt="Alivia">
               <Text as="h5">Alivia</Text>
               <Text>
                 StyleQ connects me so easily with clients and gives me an opportunity to
@@ -267,23 +271,23 @@ const IndexPage = () => {
           }
           <Text as="h2" align="right" subheading className="rellax" data-rellax-speed="1.3">OUR TOP STYLISTS</Text>
           <div className="rellax" data-rellax-speed="1.4">
-            <Stylist src="wes.webp" alt="Wes - A barber">
+            <Stylist src="wes.jpeg" alt="Wes - A barber">
               <Text as="h5">Wes</Text>
               <Text as="h6">Barber</Text>
             </Stylist>
-            <Stylist src="deanna.webp" alt="Deanna - A stylist">
+            <Stylist src="deanna.jpg" alt="Deanna - A stylist">
               <Text as="h5">Deanna</Text>
               <Text as="h6">Stylist</Text>
             </Stylist>
-            <Stylist src="alivia.webp" alt="Alivia - A stylist">
+            <Stylist src="alivia.jpg" alt="Alivia - A stylist">
               <Text as="h5">Alivia</Text>
               <Text as="h6">Stylist</Text>
             </Stylist>
-            <Stylist src="markia.webp" alt="Alivia - A stylist">
+            <Stylist src="markia.jpg" alt="Markia - A stylist">
               <Text as="h5">Markia</Text>
               <Text as="h6">Stylist</Text>
             </Stylist>
-            <Stylist src="arkeen.webp" alt="Alivia - A stylist">
+            <Stylist src="arkeen.jpg" alt="Arkeen - A barber">
               <Text as="h5">Arkeen</Text>
               <Text as="h6">Barber</Text>
             </Stylist>

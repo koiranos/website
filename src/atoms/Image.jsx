@@ -11,7 +11,7 @@ const Image = ({ src, ...props }) => {
             relativePath
             childImageSharp {
               fixed(width: 270, height: 350, quality: 100) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }

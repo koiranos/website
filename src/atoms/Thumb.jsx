@@ -11,7 +11,7 @@ const Thumb = ({ src, ...props }) => {
             relativePath
             childImageSharp {
               fixed(width: 80, height: 80, quality: 100) {
-                ...GatsbyImageSharpFixed
+                ...GatsbyImageSharpFixed_withWebp_noBase64
               }
             }
           }
