@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Rellax from 'rellax';
 
@@ -174,19 +174,9 @@ const Features = styled.div`
 `;
 
 const IndexPage = () => {
-  const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
   useEffect(() => {
-    const rellax = new Rellax('.rellax', { speed: 2 });
-    if(deviceWidth < 1024) {
-      rellax.destroy();
-    } else {
-      rellax.refresh();
-    }
-  }, [deviceWidth]);
-
-  window.addEventListener('resize', () => {
-    setDeviceWidth(window.innerWidth);
-  });
+    new Rellax('.rellax', { speed: 2 });
+  }, []);
 
   return (
     <Layout title="Home">
