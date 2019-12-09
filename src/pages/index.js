@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Rellax from 'rellax';
 
@@ -117,8 +117,8 @@ const Section4 = styled.section`
     left: -5vw;
    }
    &:nth-of-type(2){
-    bottom: 0;
-    right: 0;
+    bottom: -20px;
+    left: 0;
    }
    &:nth-of-type(3) {
      bottom: -680px;
@@ -142,10 +142,11 @@ const Section4 = styled.section`
    }
    &:nth-of-type(8) {
     right: -4vw;
+    bottom: 320px;
    }
    &:last-of-type{
-     bottom: -700px;
-     left: -4vw;
+    bottom: -700px;
+    left: -4vw;
    }
  }
 `;
@@ -173,9 +174,20 @@ const Features = styled.div`
 `;
 
 const IndexPage = () => {
+  const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
   useEffect(() => {
-    new Rellax('.rellax', { speed: 2 });
-  }, []);
+    const rellax = new Rellax('.rellax', { speed: 2 });
+    if(deviceWidth < 1024) {
+      rellax.destroy();
+    } else {
+      rellax.refresh();
+    }
+  }, [deviceWidth]);
+
+  window.addEventListener('resize', () => {
+    setDeviceWidth(window.innerWidth);
+  });
+
   return (
     <Layout title="Home">
       <Header />
