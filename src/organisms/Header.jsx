@@ -20,7 +20,7 @@ const Root = styled.header`
 const Header = () => (
   <Root>
     <Link to="/"><img src={Logo} alt="StyleQ Logo" /></Link>
-    <Button as="a" cta rel="noopener" href="https://square.site/book/DCG3FAF4DY4K3/styleq-milwaukee-wi">Book now</Button>
+    <Button as="a" cta rel="noopener" href="https://my.setmore.com/bookanappointmentv3.do?uniqueKey=dc195bd4-0d63-451f-84ac-4b4ec3ecf5ca">Book now</Button>
   </Root>
 );
 
