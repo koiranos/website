@@ -15,6 +15,9 @@ const Button = styled.button`
   + a, + button{
     margin-left: 1rem;
   }
+  &:focus{
+    box-shadow: 0 0 .3rem var(--color-focus);
+  }
   ${({ curvy }) => curvy && css`
     border-radius: .4rem;
   `}

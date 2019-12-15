@@ -184,7 +184,7 @@ const IndexPage = () => {
       <Section1>
         <Text as="h5">
           <Text as="span">‹‹‹</Text>
-          <a href="#footer">Are you a stylists? Sign up with us now</a>
+          <a href="https://styleqpro.typeform.com/to/HXykIu">Are you a stylists? Sign up with us now</a>
         </Text>
         <Text as="h1" intro>BOOK<br /> THE BEST<br /> STYLISTS<br /> QUICKLY</Text>
       </Section1>

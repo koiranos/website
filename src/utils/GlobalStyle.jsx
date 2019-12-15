@@ -4,19 +4,19 @@ const GlobalStyle = createGlobalStyle`
 *{
   box-sizing: border-box;
   &:focus{
-    outline: solid thin var(--color-focus);
+    outline: 0;
   }
 }
 :root{
   --color-brand-1: #951249;
   --color-brand-2: #C41861;
   --color-brand-3: #F46E83;
-  --color-brand-4: #bada55;
-  --color-brand-5: #bada55;
+  --color-brand-4: #dd75a0;
+  --color-brand-5: #e2a2a2;
   --color-bg: #fff;
   --color-fg: #222;
   --color-link: var(--color-brand-3);
-  --color-focus: var(--color-brand-1);
+  --color-focus: var(--color-brand-3);
   --color-highlight: #ffbfda;
   --color-error: #BC1717;
   --color-success: #F5F5F8;
@@ -31,7 +31,8 @@ const GlobalStyle = createGlobalStyle`
   --animation-easing: cubic-bezier(.5, 0, .5, 1);
   --site-width: 1100px;
   font-size: 62.5%;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
