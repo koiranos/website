@@ -194,7 +194,7 @@ const IndexPage = () => {
           <Features>
             <Feature image="feature-1.jpg" origin="left" alt="Barber giving haircut">
               <Text as="h2" truncate="break">Barbers</Text>
-              <Text as="h4" weight="300">A variety of skilled barbers for kids and adult men.</Text>
+              <Text as="h4" weight="300">A variety of skilled barbers for kids and adults.</Text>
             </Feature>
             <Feature image="feature-2.jpg" origin="right" alt="Hairstylist straightening lady's hair">
               <Text as="h2" truncate="break">Hairstylists/Haircuts</Text>
@@ -207,6 +207,10 @@ const IndexPage = () => {
             <Feature image="feature-4.jpeg" origin="right" alt="Lady with blowout hair">
               <Text as="h2" truncate="break">Blowouts</Text>
               <Text as="h4" weight="300">You get a blowout so good it makes you want to go out.</Text>
+            </Feature>
+            <Feature image="feature-5.jpg" origin="left" alt="Smiling lady with natural hair">
+              <Text as="h2" truncate="break">Natural Hair</Text>
+              <Text as="h4" weight="300">When you love a good natural look, we can you make you sparkle in all natural.</Text>
             </Feature>
           </Features>
         </Container>
@@ -233,10 +237,10 @@ const IndexPage = () => {
                 Going into my appointment, I wasn't sure what to expect. Howver, after the consultation process, my needs were met and exceeded.
               </Text>
             </Review>
-            <Review src="anon.jpg" alt="Anonymous user">
-              <Text as="h5">Nic</Text>
+            <Review src="reviewer-4.jpg" alt="Anonymous user">
+              <Text as="h5">Alondra</Text>
               <Text>
-              StyleQ made it extremely easy for me to find a stylist that was able to help me decide on a style that fit my looks.
+              The girls were really friendly and I loved the lash place.
               </Text>
             </Review>
             <Review src="reviewer-5.jpg" alt="Deanna">
