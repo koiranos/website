@@ -6,6 +6,7 @@ import Button from '../atoms/Button';
 import { TextBox } from '../atoms/Forms';
 
 const Root = styled.footer`
+  position: relative;
   padding: 5rem 0 0;
   background: var(--color-brand-1);
   color: #fff;
@@ -84,12 +85,12 @@ const Footer = () => (
         </div>
       </div>
       <div>
-        <form action="https://bookstyleq.us4.list-manage.com/subscribe/post?u=ca7d77d8dd73f52e49e56d814&amp;id=646b5bfa5e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form action="https://bookstyleq.us4.list-manage.com/subscribe/post?u=ca7d77d8dd73f52e49e56d814&amp;id=646b5bfa5e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
           <Text as="h4">Subscribe to our newsletter</Text>
           <TextBox block name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email address" required />
           {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
           <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-            <input type="text" name="b_ca7d77d8dd73f52e49e56d814_646b5bfa5e" tabindex="-1" value="" />
+            <input type="text" name="b_ca7d77d8dd73f52e49e56d814_646b5bfa5e" tabIndex="-1" />
           </div>
           <Button primary curvy>Subscribe</Button>
         </form>

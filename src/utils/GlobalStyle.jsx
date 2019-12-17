@@ -31,8 +31,6 @@ const GlobalStyle = createGlobalStyle`
   --animation-easing: cubic-bezier(.5, 0, .5, 1);
   --site-width: 1100px;
   font-size: 62.5%;
-  width: 100vw;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
