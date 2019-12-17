@@ -84,9 +84,13 @@ const Footer = () => (
         </div>
       </div>
       <div>
-        <form action="">
+        <form action="https://bookstyleq.us4.list-manage.com/subscribe/post?u=ca7d77d8dd73f52e49e56d814&amp;id=646b5bfa5e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <Text as="h4">Subscribe to our newsletter</Text>
-          <TextBox block id="newsletter" placeholder="Enter your email address" />
+          <TextBox block name="EMAIL" type="email" id="mce-EMAIL" placeholder="Enter your email address" required />
+          {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
+          <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+            <input type="text" name="b_ca7d77d8dd73f52e49e56d814_646b5bfa5e" tabindex="-1" value="" />
+          </div>
           <Button primary curvy>Subscribe</Button>
         </form>
       </div>
