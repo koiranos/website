@@ -200,7 +200,7 @@ const IndexPage = () => {
               <Text as="h2" truncate="break">Hairstylists/Haircuts</Text>
               <Text as="h4" weight="300">Professional stylists giving you just your desired hair look.</Text>
             </Feature>
-            <Feature image="feature-3.jpeg" origin="left" alt="Lady with braids hairstyle">
+            <Feature image="feature-3.jpg" origin="left" alt="Lady with braids hairstyle">
               <Text as="h2" truncate="break">Braids/Locks</Text>
               <Text as="h4" weight="300">Get braids and updos for any hair type. We make it look great on you.</Text>
             </Feature>
