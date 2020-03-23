@@ -2,18 +2,25 @@
   "name": "styleq-web",
   "version": "1.0.0",
   "description": "styleq web app",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "dotenv": "^8.2.0",
     "gatsby-plugin-google-analytics": "^2.1.29",
     "gatsby-plugin-netlify": "^2.1.25",
     "gatsby-plugin-styled-components": "^3.1.13",
     "rellax": "^1.10.0",
     "styled-components": "^4.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "html-webpack-plugin": "^4.0.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
