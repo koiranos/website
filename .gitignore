@@ -59,7 +59,8 @@ typings/
 
 # site files
 .cache/
-public
+public/*.bundle.js
+public/index.html
 
 # Mac files
 .DS_Store
