@@ -4,6 +4,8 @@
   "description": "styleq web app",
   "private": true,
   "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.0.1"
@@ -28,7 +30,7 @@
     "test": "jest",
     "build": "webpack --config webpack.config.js --env.NODE_ENV=production",
     "dev": "webpack-dev-server --env.NODE_ENV=development",
-    "start": "webpack-dev-server",
+    "start": "node src/server.js",
     "postinstall": "rm -rf public && mkdir public"
   },
   "repository": {
