@@ -30,7 +30,8 @@
     "test": "jest",
     "build": "webpack --config webpack.config.js --env.NODE_ENV=production",
     "dev": "webpack-dev-server --env.NODE_ENV=development",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "postinstall": "npm i webpack webpack-cli"
   },
   "repository": {
     "type": "git",
