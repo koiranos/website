@@ -8,10 +8,10 @@ const GlobalStyle = createGlobalStyle`
   }
 }
 :root{
-  --color-brand-1: #951249;
-  --color-brand-2: #C41861;
-  --color-brand-3: #F46E83;
-  --color-brand-4: #dd75a0;
+  --color-brand-1: #a43f6a;
+  --color-brand-2: #6f325b;
+  --color-brand-3: #f3aacb;
+  --color-brand-4: #bf88b9;
   --color-brand-5: #e2a2a2;
   --color-bg: #fff;
   --color-fg: #222;
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   --drop-shadow-1: .1rem .1rem .2rem rgba(0, 0, 0, .05);
   --drop-shadow-2: 0 .1rem .2rem rgba(0, 0, 0, .3);
   --animation-easing: cubic-bezier(.5, 0, .5, 1);
-  --site-width: 1100px;
+  --site-width: 1300px;
   font-size: 62.5%;
   scroll-behavior: smooth;
   line-height: 1.15;
@@ -38,7 +38,6 @@ const GlobalStyle = createGlobalStyle`
 body{
   width: 100%;
   margin: 0;
-  padding: 4rem 0 0;
   background: var(--color-bg);
   color: var(--color-fg);
   font: 1.6rem/1.5 var(--font-secondary);
